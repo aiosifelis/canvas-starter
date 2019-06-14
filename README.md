@@ -43,14 +43,16 @@ game.start()
 
 The `Game` function returns a reference to the [`CanvasRenderingContext2D`](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D) API, and some additional properties and methods.
 
-| Prop  | Type    | Default Value              | Description                       |
-| ----- | ------- | -------------------------- | --------------------------------- |
-| mouse | Object  | `{down: false, x: 0, y:0}` | The mouse pointer state           |
-| UP    | Boolean | false                      | If the UP Arrow key is pressed    |
-| DOWN  | Boolean | false                      | If the DOWN Arrow key is pressed  |
-| LEFT  | Boolean | false                      | If the LEFT Arrow key is pressed  |
-| RIGHT | Boolean | false                      | If the RIGHT Arrow key is pressed |
-| SPACE | Boolean | false                      | If the SPACE key is pressed       |
+| Prop      | Type    | Default Value | Description                           |
+| --------- | ------- | ------------- | ------------------------------------- |
+| mouseX    | Boolean | false         | The x coordinate of the mouse pointer |
+| mouseY    | Boolean | false         | The y coordinate of the mouse pointer |
+| mouseDown | Boolean | false         | If the mouse is pressed               |
+| UP        | Boolean | false         | If the UP Arrow key is pressed        |
+| DOWN      | Boolean | false         | If the DOWN Arrow key is pressed      |
+| LEFT      | Boolean | false         | If the LEFT Arrow key is pressed      |
+| RIGHT     | Boolean | false         | If the RIGHT Arrow key is pressed     |
+| SPACE     | Boolean | false         | If the SPACE key is pressed           |
 
 | Method    | Accepts  | Returns /Default | Description                                                |
 | --------- | -------- | ---------------- | ---------------------------------------------------------- |
