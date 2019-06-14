@@ -14,13 +14,14 @@ HTML5 Canvas game starter is a helper to start an HTML5 Canvas game.
 -   Game loop
 -   Access to context drawing API
 
-### Usage
+### Basic Usage
 
 ```
 var game  = Game()
 
 game.setFrame(function () {
     //draw stuff
+    // game.fillStyle
 })
 
 
@@ -40,112 +41,26 @@ game.start()
 
 ##### Returns
 
-The `Game` function returns a reference to the [`CanvasRenderingContext2D`](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D) API. Additionally a few helper params and methods are attached.
+The `Game` function returns a reference to the [`CanvasRenderingContext2D`](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D) API, and some additional properties and methods.
 
-| Param    | Type    | Value                        | Description                                        |
-| -------- | ------- | ---------------------------- | -------------------------------------------------- |
-| mouse    | Object  | `{ down: false, x: 0, y: 0}` | The mouse state                                    |
-| UP       | Boolean | `false`                      | If the UP Arrow key is pressed                     |
-| DOWN     | Boolean | `false`                      | If the DOWN Arrow key is pressed                   |
-| LEFT     | Boolean | `false`                      | If the LEFT Arrow key is pressed                   |
-| RIGHT    | Boolean | `false`                      | If the RIGHT Arrow key is pressed                  |
-| SPACE    | Boolean | `false`                      | If the SPACE Arrow key is pressed                  |
-| setFrame | method  |                              | What is going to happen in each frame of animation |
-| start    | method  |                              | Start the game loop                                |
+| Prop  | Type    | Default Value              | Description                       |
+| ----- | ------- | -------------------------- | --------------------------------- |
+| mouse | Object  | `{down: false, x: 0, y:0}` | The mouse pointer state           |
+| UP    | Boolean | false                      | If the UP Arrow key is pressed    |
+| DOWN  | Boolean | false                      | If the DOWN Arrow key is pressed  |
+| LEFT  | Boolean | false                      | If the LEFT Arrow key is pressed  |
+| RIGHT | Boolean | false                      | If the RIGHT Arrow key is pressed |
+| SPACE | Boolean | false                      | If the SPACE key is pressed       |
 
-#### [Examples](https://github.com/aiosifelis/game-starter/tree/master/examples)
+| Method    | Accepts  | Returns /Default | Description                                                |
+| --------- | -------- | ---------------- | ---------------------------------------------------------- |
+| setFrame  | Function | void             | What is going to happen in each frame of animation         |
+| start     |          | void             | Start the game loop                                        |
+| isPressed | Number   | Boolean          | Pass the keyCode from an event to check is this is pressed |
 
--   Fullscreen
+#### Examples
 
-```
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Canvas Starter Fullscreen</title>
-
-        <style>
-            * {
-                margin: 0;
-                padding: 0;
-            }
-
-            canvas {
-                position: fixed;
-                width: 100%;
-                height: 100%;
-            }
-        </style>
-    </head>
-    <body>
-        <canvas></canvas>
-        <script src="../lib/game.js"></script>
-
-        <script>
-            var game = Game({
-                background: '#000000'
-            })
-
-            game.setFrame(function() {
-                game.fillStyle = '#007700'
-                game.rect(20, 20, 100, 100)
-                game.fill()
-            })
-
-            game.start()
-        </script>
-    </body>
-</html>
-```
-
--   Fixed Size
-
-```
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Canvas Starter Fixed Screen</title>
-
-        <style>
-            * {
-                margin: 0;
-                padding: 0;
-            }
-
-            canvas {
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                transform: translateX(-50%) translateY(-50%);
-                width: 640px;
-                height: 480px;
-            }
-        </style>
-    </head>
-    <body>
-        <canvas></canvas>
-        <script src="../lib/game.js"></script>
-
-        <script>
-            var game = Game({
-                background: '#000000',
-                width: 640,
-                height: 480
-            })
-
-            game.setFrame(function() {
-                game.fillStyle = '#007700'
-                game.rect(20, 20, 100, 100)
-                game.fill()
-            })
-
-            game.start()
-        </script>
-    </body>
-</html>
-```
+-   [Fullscreen](https://github.com/aiosifelis/game-starter/blob/master/examples/fullscreen.html)
+-   [Fixed Size](https://github.com/aiosifelis/game-starter/blob/master/examples/fixed-size.html)
+-   [Mouse Detection](https://github.com/aiosifelis/game-starter/blob/master/examples/mouse-detection.html)
+-   [Arrows Pressed](https://github.com/aiosifelis/game-starter/blob/master/examples/arrows-pressed.html)
