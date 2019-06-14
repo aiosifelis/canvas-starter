@@ -41,7 +41,7 @@ game.start()
 
 ##### Returns
 
-The `Game` function returns a reference to the [`CanvasRenderingContext2D`](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D) API, and some additional properties and methods.
+The `Game` function returns a full reference of the [`CanvasRenderingContext2D`](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D) API and some additional properties and methods.
 
 | Prop      | Type    | Default Value | Description                           |
 | --------- | ------- | ------------- | ------------------------------------- |
