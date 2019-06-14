@@ -34,7 +34,7 @@ The `Game` function accepts the following configuration parameters and returns a
 
 ##### Accepts
 
-| Param      | Default                               | Description                        |
+| Param      | Default Value                         | Description                        |
 | ---------- | ------------------------------------- | ---------------------------------- |
 | screen     | `document.querySelector('canvas')`    | The `<canvas />` element           |
 | width      | document.documentElement.clientWidth  | The canvas width                   |
