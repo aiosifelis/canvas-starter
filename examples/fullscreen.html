@@ -4,22 +4,13 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Canvas Starter</title>
+        <title>Canvas Starter Fullscreen</title>
 
         <style>
             * {
                 margin: 0;
                 padding: 0;
             }
-
-            /* canvas {
-                position: fixed;
-                left: 50%;
-                top: 50%;
-                transform: translateX(-50%) translateY(-50%);
-                width: 640px;
-                height: 480px;
-            } */
 
             canvas {
                 position: fixed;
@@ -30,28 +21,39 @@
     </head>
     <body>
         <canvas></canvas>
-        <script src="lib/game.js"></script>
-        <script src="lib/controller.js"></script>
+        <script src="../lib/game.js"></script>
 
         <script>
-            var game = new Game({
+            var game = Game({
                 background: '#000000'
             })
 
-            var ctx = game.ctx
-
-            var controller = new Controller(game)
-
             game.setFrame(function() {
-                ctx.fillStyle = '#007700'
-                ctx.rect(20, 20, 100, 100)
-                ctx.fill()
+                game.fillStyle = '#007700'
+                game.rect(20, 20, 100, 100)
+                game.fill()
 
-                if (controller.UP()) {
+                if (game.UP) {
                     console.log('UP Pressed')
                 }
 
-                console.log(controller.pointer)
+                if (game.DOWN) {
+                    console.log('DOWN Pressed')
+                }
+
+                if (game.LEFT) {
+                    console.log('LEFT Pressed')
+                }
+
+                if (game.RIGHT) {
+                    console.log('RIGHT Pressed')
+                }
+
+                if (game.SPACE) {
+                    console.log('SPACE Pressed')
+                }
+
+                console.log(game.mouse)
             })
 
             game.start()
