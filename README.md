@@ -37,7 +37,7 @@ game.start()
 | height     | document.documentElement.clientHeight | The canvas height                  |
 | background | `#ffffff`                             | The background color of the canvas |
 
-#### Examples
+#### [Examples](https://github.com/aiosifelis/game-starter/tree/master/examples)
 
 -   Fullscreen
 
