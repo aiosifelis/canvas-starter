@@ -10,6 +10,7 @@ HTML5 Canvas game starter is a helper to start an HTML5 Canvas game.
 
 -   Mouse tracking
 -   Key press detection (Arrows and Spacebar)
+-   Automatic resize of canvas
 -   Game loop
 -   Access to context drawing API
 
@@ -26,7 +27,7 @@ game.setFrame(function () {
 game.start()
 ```
 
-#### Reference
+#### Reference (Game function)
 
 ##### Params
 
@@ -36,6 +37,21 @@ game.start()
 | width      | document.documentElement.clientWidth  | The canvas width                   |
 | height     | document.documentElement.clientHeight | The canvas height                  |
 | background | `#ffffff`                             | The background color of the canvas |
+
+##### Returns
+
+The `Game` function returns a reference to the [`CanvasRenderingContext2D`](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D) API. Additionally a few helper params and methods are attached.
+
+| Param    | Type    | Value                        | Description                                        |
+| -------- | ------- | ---------------------------- | -------------------------------------------------- |
+| mouse    | Object  | `{ down: false, x: 0, y: 0}` | The mouse state                                    |
+| UP       | Boolean | `false`                      | If the UP Arrow key is pressed                     |
+| DOWN     | Boolean | `false`                      | If the DOWN Arrow key is pressed                   |
+| LEFT     | Boolean | `false`                      | If the LEFT Arrow key is pressed                   |
+| RIGHT    | Boolean | `false`                      | If the RIGHT Arrow key is pressed                  |
+| SPACE    | Boolean | `false`                      | If the SPACE Arrow key is pressed                  |
+| setFrame | method  |                              | What is going to happen in each frame of animation |
+| start    | method  |                              | start the game loop                                |
 
 #### [Examples](https://github.com/aiosifelis/game-starter/tree/master/examples)
 
