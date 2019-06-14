@@ -1,12 +1,12 @@
-### HTML5 Canvas game starter
+# HTML5 Canvas game starter
 
 HTML5 Canvas game starter is a helper to start an HTML5 Canvas game.
 
-### Prerequisites
+# Prerequisites
 
 -   A styled `<canvas />` element in the `<body />`
 
-### Features
+# Features
 
 -   Mouse tracking
 -   Key press detection (Arrows and Spacebar)
@@ -14,7 +14,7 @@ HTML5 Canvas game starter is a helper to start an HTML5 Canvas game.
 -   Game loop
 -   Access to [`CanvasRenderingContext2D`](https://developer.mozilla.org/en-US/docs/Web/API/) API
 
-### Basic Usage
+# Basic Usage
 
 ```
 var game  = Game()
@@ -28,11 +28,11 @@ game.setFrame(function () {
 game.start()
 ```
 
-### Reference (Game function)
+# Reference (Game function)
 
 The `Game` function accepts the following configuration parameters and returns a full reference to the [`CanvasRenderingContext2D`](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D) API along side with some additional properties and methods.
 
-##### Accepts
+## Accepts
 
 | Param      | Default Value                         | Description                        |
 | ---------- | ------------------------------------- | ---------------------------------- |
@@ -41,7 +41,7 @@ The `Game` function accepts the following configuration parameters and returns a
 | height     | document.documentElement.clientHeight | The canvas height                  |
 | background | `#ffffff`                             | The background color of the canvas |
 
-##### Returns
+## Returns
 
 | Prop      | Type    | Default Value | Description                           |
 | --------- | ------- | ------------- | ------------------------------------- |
@@ -60,9 +60,13 @@ The `Game` function accepts the following configuration parameters and returns a
 | start     |          | void             | Start the game loop                                        |
 | isPressed | Number   | Boolean          | Pass the keyCode from an event to check is this is pressed |
 
-#### Examples
+# Examples
 
 -   [Fullscreen](https://github.com/aiosifelis/game-starter/blob/master/examples/fullscreen.html)
 -   [Fixed Size](https://github.com/aiosifelis/game-starter/blob/master/examples/fixed-size.html)
 -   [Mouse Detection](https://github.com/aiosifelis/game-starter/blob/master/examples/mouse-detection.html)
 -   [Arrows Pressed](https://github.com/aiosifelis/game-starter/blob/master/examples/arrows-pressed.html)
+
+# License
+
+MIT Licensed. Copyright (c) Andreas Iosifelis 2019.
