@@ -30,7 +30,9 @@ game.start()
 
 ### Reference (Game function)
 
-##### Params
+The `Game` function accepts the following configuration parameters and returns a full reference to the [`CanvasRenderingContext2D`](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D) API along side with some additional properties and methods.
+
+##### Accepts
 
 | Param      | Default                               | Description                        |
 | ---------- | ------------------------------------- | ---------------------------------- |
@@ -40,8 +42,6 @@ game.start()
 | background | `#ffffff`                             | The background color of the canvas |
 
 ##### Returns
-
-The `Game` function returns a full reference of the [`CanvasRenderingContext2D`](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D) API and some additional properties and methods.
 
 | Prop      | Type    | Default Value | Description                           |
 | --------- | ------- | ------------- | ------------------------------------- |
