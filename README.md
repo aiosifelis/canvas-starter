@@ -51,7 +51,7 @@ The `Game` function returns a reference to the [`CanvasRenderingContext2D`](http
 | RIGHT    | Boolean | `false`                      | If the RIGHT Arrow key is pressed                  |
 | SPACE    | Boolean | `false`                      | If the SPACE Arrow key is pressed                  |
 | setFrame | method  |                              | What is going to happen in each frame of animation |
-| start    | method  |                              | start the game loop                                |
+| start    | method  |                              | Start the game loop                                |
 
 #### [Examples](https://github.com/aiosifelis/game-starter/tree/master/examples)
 
