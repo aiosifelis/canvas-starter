@@ -12,7 +12,7 @@ HTML5 Canvas game starter is a helper to start an HTML5 Canvas game.
 -   Key press detection (Arrows and Spacebar)
 -   Automatic resize of canvas
 -   Game loop
--   Access to context drawing API
+-   Access to [`CanvasRenderingContext2D`](https://developer.mozilla.org/en-US/docs/Web/API/) API
 
 ### Basic Usage
 
