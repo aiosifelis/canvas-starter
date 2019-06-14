@@ -28,7 +28,7 @@ game.setFrame(function () {
 game.start()
 ```
 
-#### Reference (Game function)
+### Reference (Game function)
 
 ##### Params
 
