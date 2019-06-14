@@ -28,7 +28,7 @@ game.setFrame(function () {
 game.start()
 ```
 
-# Reference (Game function)
+# Reference
 
 The `Game` function accepts the following configuration parameters and returns a full reference to the [`CanvasRenderingContext2D`](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D) API along side with some additional properties and methods.
 
