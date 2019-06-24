@@ -28,28 +28,39 @@
                 background: '#000000'
             })
 
-            game.setFrame(function() {
-                game.fillStyle = '#007700'
-                game.rect(20, 20, 100, 100)
-                game.fill()
+            var x = 20,
+                y = 20,
+                speed = 2
 
+            game.onFrame(function() {
+                game.fillStyle = '#007700'
+                game.rect(x, y, 100, 100)
+                game.fill()
                 if (game.UP) {
+                    y -= speed
                     console.log('UP Pressed')
                 }
 
                 if (game.DOWN) {
+                    y += speed
+                    game.rect(x, y, 100, 100)
                     console.log('DOWN Pressed')
                 }
 
                 if (game.LEFT) {
+                    x -= speed
+
                     console.log('LEFT Pressed')
                 }
 
                 if (game.RIGHT) {
+                    x += speed
+
                     console.log('RIGHT Pressed')
                 }
 
                 if (game.SPACE) {
+                    speed++
                     console.log('SPACE Pressed')
                 }
             })

@@ -56,7 +56,7 @@ The `Game` function accepts the following configuration parameters and returns a
 
 | Method    | Accepts  | Returns /Default | Description                                                |
 | --------- | -------- | ---------------- | ---------------------------------------------------------- |
-| setFrame  | Function | void             | What is going to happen in each frame of animation         |
+| onFrame   | Function | void             | What is going to happen in each frame of animation         |
 | start     |          | void             | Start the game loop                                        |
 | isPressed | Number   | Boolean          | Pass the keyCode from an event to check is this is pressed |
 
